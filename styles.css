@@ -1,0 +1,263 @@
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+        color: #1f70c2;
+      transform: translateY(-20px);
+    }
+    60% {
+        color: #1f70c2;
+      transform: translateY(-10px);
+    }
+  }
+
+
+body{
+    margin:0;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    background-color: #f8cde5;
+    position: fixed;
+    width:100%;
+    top:0%;
+    z-index: 1000;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#projects{
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+#about{
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+#location-email{
+    display: flex;
+    font-size: 24px;
+}
+
+#location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 200px;
+}
+
+#email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+section{
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+}
+
+#welcome{
+    text-decoration: none;
+    font-size: 28px;
+    margin-left: 80px;
+    cursor: pointer;
+    color: #111111;
+    font-weight: 700;
+
+}
+
+nav{
+    margin-left: auto;
+    margin-right: 80px;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: #302f2f;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+nav a:hover{
+    color:#000000;
+    font-weight: 700;
+}
+
+h2{
+    font-weight: 300;
+}
+
+#links{
+    max-width:600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    flex-shrink: 1;
+    margin: auto;
+}
+
+.link-btn{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    font-size: 26px;
+    background: #e01678;
+    color: black;
+    border: 5px solid #a61b52;
+    border-radius: 30px;
+    width: 400px;
+    height: 100px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.link-btn:hover{
+    background: #a61b52;
+}
+
+#profile-pic{
+    height: 400px;
+    width:400px;
+    background-size:contain;
+    background-repeat: none;
+    margin-bottom: 40px;
+    border-radius: 100%;
+    object-position: 50% 25%;
+    object-fit: cover;
+    margin-right: 40px;
+    border:#0c0c0c 3px solid;
+}
+
+#socials-main a{
+    text-decoration: none;
+    color: #0c0c0c;
+}
+
+#socials-main a:hover{
+    text-decoration: none;
+    color: #3f3f3f;
+}
+
+#desc-container{
+    display: flex;
+}
+
+#text-plus-socials{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#text-plus-socials #portfolio-word{
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    animation: bounce 1s 2s;
+    
+    animation-iteration-count: 2;
+    text-decoration: none;
+}
+
+#text-plus-socials #portfolio-word:hover{
+    color: #1f70c2;
+
+}
+
+    #tech-stack{
+    display: flex;
+}
+
+#tech-stack p{
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+#tech-stack img{
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: transform 0.2s ease;
+}
+
+#tech-stack img:hover{
+    transform: scale(1.2);
+}
+
+.project-card{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+
+.project-card img{
+    margin-right: 40px;
+}
+
+footer{
+    background-color: #161616;
+    color: #aaaaaa;
+    height: 74px;
+    display: flex;
+    flex-shrink: 0;
+    justify-content:center;
+    align-items: center;
+    margin-top: auto;
+    font-weight: 500;
+    
+}
+
+footer p{
+    margin-left: auto;
+    font-weight: 400;
+}
+
+footer a{
+    text-decoration: none;
+    color: #aaaaaa;
+
+}
+footer #socials{
+    
+    margin-left: auto;
+}
+
