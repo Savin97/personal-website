@@ -20,7 +20,8 @@ body{
 }
 
 section{
-    padding: 20px;
+    padding: 50px;
+    padding-top: 10vh;
 }
 
 header{
@@ -35,7 +36,6 @@ header{
 }
 
 main{
-    border: red solid 3px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -90,6 +90,9 @@ main{
 }
 
 #home{
+    padding: 0;
+    padding-top: 10vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,28 +140,6 @@ h2{
     flex-direction:column;
     flex-shrink: 1;
     margin: auto;
-}
-
-.link-btn{
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    text-align: center;
-    font-size: 26px;
-    background: #e01678;
-    color: black;
-    border: 5px solid #a61b52;
-    border-radius: 30px;
-    width: 400px;
-    height: 100px;
-    margin-bottom: 20px;
-    cursor: pointer;
-}
-
-.link-btn:hover{
-    background: #a61b52;
 }
 
 #profile-pic{
@@ -256,7 +237,7 @@ h2{
 
 .project-card{
     background-color: white;
-    padding: 20px;
+    padding: 50px;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -274,10 +255,13 @@ h2{
 
 .project-card img{
     margin-right: 40px;
-    width: 400px;
+    width: 600px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 .project-card img:hover{
+    transform: scale(1.05);
     display: flex;
     align-items: center;
     justify-content: center;
