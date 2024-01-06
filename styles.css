@@ -323,3 +323,191 @@ footer #socials{
     margin-left: auto;
 }
 
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    padding: 20px; /* Adjusted padding for smaller screens */
+    padding-top: 5vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 7vh; /* Reduced height for smaller screens */
+    background: rgb(204, 2, 96);
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 1000;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#projects,
+#about,
+#contact {
+    padding: 20px;
+}
+
+#about p {
+    font-size: 18px; /* Adjusted font size for smaller screens */
+    max-width: 100%;
+}
+
+#location-email {
+    display: flex;
+    font-size: 20px; /* Adjusted font size for smaller screens */
+}
+
+#location,
+#email {
+    margin-right: 0;
+}
+
+#home {
+    padding: 0;
+    padding-top: 5vh;
+    height: auto;
+}
+
+#welcome {
+    font-size: 20px; /* Adjusted font size for smaller screens */
+    margin-left: 20px; /* Adjusted margin for smaller screens */
+}
+
+nav {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+nav a {
+    font-size: 16px; /* Adjusted font size for smaller screens */
+    margin-left: 10px;
+}
+
+#links {
+    max-width: 100%; /* Full width for smaller screens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#profile-pic {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    margin-right: 0;
+}
+
+.social-icon,
+.social-icon:hover,
+.social-icon-with-text,
+.social-icon-with-text:hover {
+    font-size: 16px;
+    padding: 5px;
+}
+
+#text-plus-socials {
+    font-size: 20px;
+}
+
+#tech-stack p {
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+#tech-stack img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.project-card {
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.project-card img {
+    margin-right: 20px;
+    width: 100%;
+}
+
+.tools-used,
+.code-open {
+    margin: 20px;
+}
+
+footer {
+    height: auto;
+}
+
+footer a {
+    font-size: 16px;
+}
+
+footer p {
+    margin-left: auto;
+}
+
+footer #socials {
+    margin-left: auto;
+}
+
+/* Additional Mobile Styles */
+@media (max-width: 600px) {
+    #home {
+        padding-top: 3vh;
+    }
+
+    #welcome {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    header {
+        height: 8vh;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin-left: 8px;
+    }
+
+    #profile-pic {
+        height: 150px;
+        width: 150px;
+    }
+
+    #tech-stack p {
+        font-size: 14px;
+        padding-right: 5px;
+    }
+
+    #tech-stack img {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .project-card {
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
+    .social-icon,
+    .social-icon:hover,
+    .social-icon-with-text,
+    .social-icon-with-text:hover {
+        font-size: 14px;
+        padding: 3px;
+    }
+}
