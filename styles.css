@@ -48,7 +48,6 @@ header{
 }
 
 main{
-    border: red solid 3px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -254,7 +253,7 @@ h2{
 
 .project-card{
     background-color: white;
-    padding: 20px;
+    padding: 50px;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -272,10 +271,13 @@ h2{
 
 .project-card img{
     margin-right: 40px;
-    width: 400px;
+    width: 600px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 .project-card img:hover{
+    transform: scale(1.05);
     display: flex;
     align-items: center;
     justify-content: center;
