@@ -12,6 +12,18 @@
     }
   }
 
+@media (max-width: 1000px) {
+
+}
+
+@media (min-width: 1001px) {
+    div.container-fluid{
+        padding: 0;
+    }
+
+}
+
+
 body{
     margin:0;
     font-family: 'Inter', sans-serif;
@@ -20,7 +32,8 @@ body{
 }
 
 section{
-    padding: 20px;
+    padding: 50px;
+    padding-top: 10vh;
 }
 
 header{
@@ -28,9 +41,9 @@ header{
     align-items: center;
     height: 10vh;
     background: rgb(44, 1, 114);
-    position: fixed;
+    position:sticky;
+    top:0;
     width:100%;
-    top:0%;
     z-index: 1000;
 }
 
@@ -41,7 +54,7 @@ main{
     flex-direction: column;
 }
 
-#projects{
+.projects{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,7 +102,9 @@ main{
     margin-right: 20px;
 }
 
-#home{
+.home{
+    padding: 0;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,7 +144,7 @@ h2{
     font-weight: 300;
 }
 
-#links{
+.links{
     max-width:600px;
     display: flex;
     justify-content: center;
@@ -139,32 +154,14 @@ h2{
     margin: auto;
 }
 
-.link-btn{
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    text-align: center;
-    font-size: 26px;
-    background: #e01678;
-    color: black;
-    border: 5px solid #a61b52;
-    border-radius: 30px;
-    width: 400px;
-    height: 100px;
-    margin-bottom: 20px;
-    cursor: pointer;
-}
-
-.link-btn:hover{
-    background: #a61b52;
-}
-
-#profile-pic{
+.img-container{
     height: 400px;
-    width:400px;
-    background-size:contain;
+    width: 400px;
+}
+
+.profile-pic{
+    display: flex;
+    width: 100%;
     background-repeat: none;
     margin-bottom: 40px;
     border-radius: 100%;
@@ -172,6 +169,7 @@ h2{
     object-fit: cover;
     margin-right: 40px;
     border:#0c0c0c 3px solid;
+    flex-shrink: 1;
 }
 
 .social-icon{
@@ -203,18 +201,18 @@ h2{
     color: #3f3f3f;
 }
 
-#desc-container{
+.desc-container{
     display: flex;
 }
 
-#text-plus-socials{
+.text-plus-socials{
     font-size: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#text-plus-socials #portfolio-word{
+.text-plus-socials #portfolio-word{
     color: black;
     cursor: pointer;
     display: inline-block;
@@ -224,33 +222,33 @@ h2{
     text-decoration: none;
 }
 
-#text-plus-socials #portfolio-word:hover{
+.text-plus-socials #portfolio-word:hover{
     color: #c21f1f;
 
 }
 
-#tech-stack{
+.tech-stack{
     display: flex;
 }
 
-#tech-stack p{
+.tech-stack p{
     font-size: 20px;
     padding-right: 20px;
 }
 
-#tech-stack img{
+.tech-stack img{
     margin-left: 20px;
     margin-right: 20px;
     transition: transform 0.2s ease;
 }
 
-#tech-stack img:hover{
+.tech-stack img:hover{
     transform: scale(1.2);
 }
 
 /*Portfolio */
 
-#projects h3{
+.projects h3{
     margin-bottom: 60px;
 }
 
